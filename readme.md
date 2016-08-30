@@ -173,10 +173,9 @@ const floorAndToString = compose((val) => val.toString(), Math.floor) // Usage
 floorAndToString(121.212121) // "121"
 ```
 
-## Purity
+## Чистота / Purity
 
-A function is pure if the return value is only determined by its
-input values, and does not produce side effects.
+Функция называется чистой, если ее возвращаемое значение зависит только от входных параметров (т.е. является детерминированной) и она не имеет побочных эффектов.
 
 ```js
 const greet = (name) => "Hi, " + name ;
