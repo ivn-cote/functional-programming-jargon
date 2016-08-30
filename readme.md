@@ -126,11 +126,9 @@ const add1More = add3.bind(null, 2, 3); // (c) => 2 + 3 + c
 
 Partial application helps create simpler functions from more complex ones by baking in data when you have it. [Curried](#currying) functions are automatically partially applied.
 
-## Currying
+## Каррирование или карринг / Currying
 
-The process of converting a function that takes multiple arguments into a function that takes them one at a time.
-
-Each time the function is called it only accepts one argument and returns a function that takes one argument until all arguments are passed.
+Преобразование функции со многими переменными (аргументами) в набор функций, принимающих строго один аргумент. В результате набор функций при последовательном вызове дает тот же результат, что исходная функция.
 
 ```js
 const sum = (a, b) => a + b;
