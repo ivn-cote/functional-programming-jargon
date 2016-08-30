@@ -197,9 +197,9 @@ greet(); // "Hi, Brianne"
 
 ```
 
-## Side effects
+## Побочные эффекты / Side effects
 
-A function or expression is said to have a side effect if apart from returning a value, it interacts with (reads from or writes to) external mutable state.
+Функция или выражение имеет побочный эффект, если кроме того, чтобы возвращать некоторе значение, она взаимодействует с внешними (или даже глобальными) переменными, читая или записывая их значения. Такие функции называются недетерминированными, потому что они могут менять результат при повторных вызовах.
 
 ```js
 const differentEveryTime = new Date();
